@@ -38,7 +38,7 @@ class RestartMjpgStreamerPlugin(octoprint.plugin.StartupPlugin,
                 return flask.jsonify(dict(status="error", error=str(e)))
 
     def restart_mjpg_streamer(self):
-        result = subprocess.run(["sudo", "systemctl", "restart", "mjpg-streamer.service"], check=True)
+        result = subprocess.run(["sudo", "service", "mjpg-streamer", "restart"], check=True)
         if result.returncode != 0:
             raise Exception("Failed to restart mjpg-streamer")
 
