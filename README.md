@@ -9,8 +9,7 @@ or manually using this URL:
 
     https://github.com/N30Z/OctoPrint-Mjpg/archive/master.zip
 
-**TODO:** Describe how to install your plugin, if more needs to be done than just installing it via pip or through
-the plugin manager.
+Control a service for the mjpg-streamer
 
 ## Configuration
 
